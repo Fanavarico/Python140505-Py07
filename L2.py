@@ -916,134 +916,204 @@ name.isdigit() #false
 
 
 
-name='ali'
+'''
+
+
+
+1-Python built in functions
+print() input() len()
+
+2- Keywords 
+
+
+3-Variables 
+
+zarf --> value (meghdar)
+
+3.1.Numbers [int,float,complex]  ** * / + - , == != > >= < <=
+3.2. Bool [True , False]
+3.3. String --> reshte 
+[index] [start:end] zarf.str_function()
+
+str function --> fght baraye str ha hastan , 
+zarf.function()
+
+emal nemishe, khorojhi mide
+
+zarf_jadid = zarf.function()
+
+
+3.3.1. Str function taghirati lower() upper() strip() replace()
+3.3.2. .find('a')  .count('a')
+3.3.3. True false --> isdigit() --> True , False
+
+
+
+
+'''
+
+
+name = 'ali'
 
 name[0]='b'
-'''
 
+'''
 TypeError: 'str' object does not support item assignment
-
 '''
 
 
+new_name=name.replace('a','b')
 
-
-#str --> listi az character ha hast
-#list --> listi az element ha hast
-
-
-#zarf[2]  --> 0 1 2chaeracter
-
-#list --> list[2] -->2 vomin element 
-
-#----------------------
-#numbers, bool, str --> tak value boodan
-
-
-#agar man chandin megdhar ra bekhaham dar yek zarf zkhire konm che???
+#name -->ali
+#new_name --> bli
 
 
 
-#10 , 20 30 
 
-#Iterables --> dakheelsh iteration --> 
+#------------------------
 
-#List
+#Chanta Value dashtim chetor?
+
+#number, bool ,str --> tak value boodan
+
+#agarma chandin megdhar ro bekhaymd ar yek zarf zakhire konim
+
+#10 , 20 , 30
+
+#Iterables---> dakheelsh iteration bezanin  [for ,....]
+
+#list
 #tuple
 #set
 #dictionary
 
-
-#-------LIST--------
-#indexed , changable , allow duplicated
-
+#--------------------------
+'''       List          '''
+#--------------------------
+#ordered (index) , changable, allow duplicated
 
 a=10
-
 b=20
 
-#c=10,20,40,50
-
-#list
-
-c = [10,20,30,40]
-
-#c=list---> [eleme1,elem2,elem3,]
-c  = list([10,20,30,40])
+#c=10,20,30,40
 
 
+c = list([10,20,30,40]) #herfei nist
 
+#beraket []
 c = [10,20,30,40]
 
 
-#harchizi k delet mikhad
-#---assignment
 
-#c=open('User/apm/desktop/moshtarian.csv')
-#c[5]
+#harchizi ro mitoni bezari
 
+c=[10,10.233223 , 1j , True , 'Ali']
 
+c = [10,10,10,10,10,10,10,10]
 
-
-
-
-c= [10 ,10.323232 , 1j , True , 'Ali']
-#   0      1        2  
-
-#dastresi-->elemnt dastresi pedya konM???
-
-c[0] #Out[123]: 10
-
-c[1] #Out[124]: 10.323232
+#dastresi --> str 
 
 
-c[2] = 1000
+#str --> yek listi az character ha hast
+
+#name = 'ali' --> a l i 0 1 2
+
+c=[10 , 10.233223 , 1j , True , 'Ali']
+#  0      1        2      3       4
+
+
+#zarf[index]
+c[0]  #Out[3]: 10
+
+c[1] #Out[4]: 10.233223
+
+c[2]  #Out[5]: 1j
+
+
+
+#change-------------
+c[2]=10000
 
 print(c)
-'''
-[10, 10.323232, 1000, True, 'Ali']
-'''
+#[10, 10.233223, 10000, True, 'Ali']
 
 
 
 
 #slicing
 
-c= [10 ,10.323232 , 1j , True , 'Ali']
-
-d = c[1:4] #[10.323232, 1j, True]
-
-name=c[4]
-
-name[1]
-
-#-------
-c[4][1] #Out[130]: 'l'
-#az C k yej liste , ali ro bekesh biron
-#[1] --> l
+c=[10 , 10.233223 , 1j , True , 'Ali']
 
 
+c[1:4] #  1 2 3  #Out[8]: [10.233223, 1j, True]
 
-d = [10 ,20 , [10,20,30]]
+d = c[1:4] 
 
-d[2] #[10, 20, 30]
+print(d) #[10.233223, 1j, True]
 
-d[2][0] #10
+name = c[4] # 'Ali'
+
+character = name[1]
+
+print(character) #l
+
+#hamishe vasete ha ro hazf kon
+
+c[4][1]
+
+character = c[4][1]
+
+print(character) #l
 
 
-d[0][2] #TypeError: 'int' object is not subscriptable
+#dakhele yek list , list bezari
+
+d= [10 , 20 , [10,20,30]]
+
+
+d[2] # [10, 20, 30]
+
+d[2][0] # 10
+
+
+d[0][2] 
+'''
+TypeError: 'int' object is not subscriptable
+'''
 
 
 
-#str fucntions 
 
-#List fucntions --> tavabe ei k baraye list jhastan
+# Str functions -> emal nemishavad, balke khoroji mide (zarf)
 
-name.upper() #Out[137]: 'ALI'
-
-zarf = name.upper()
+# List functions --> emal mishavad , khoroji nemidahad
 
 
+#jofteshon tavabe ei hastan k yeki baraye str ha bekar mire, 
+#barsye list ha bekar miravad
+
+
+name = 'ali'
+print(type(name)) #<class 'str'>
+
+
+#upper(name) -->python built in fucntions
+
+#name.upper()
+
+new_name = name.upper()
+
+print(name) #ali
+print(new_name) #ALI
+
+#str functions emal nemsihavad, balke khoroji midahad
+
+
+#List fucntion
+
+#list.function() --> 
+
+#emal mishavad ,khoroji nemidahad
 
 '''
 list functions
@@ -1052,404 +1122,454 @@ list functions
 https://www.w3schools.com/python/python_ref_list.asp
 
 
-Method	Description
-append(+)	    Adds an element at the end of the list
-clear(+)	     Removes all the elements from the list
-copy()	    Returns a copy of the list
-count(+)	      Returns the number of elements with the specified value
-extend(+)    	Add the elements of a list (or any iterable), to the end of the current list
-index(+)	    Returns the index of the first element with the specified value
-insert(+)	    Adds an element at the specified position
-pop(+)	   Removes the element at the specified position
-remove(+)    	Removes the first item with the specified value
-reverse(+)	  Reverses the order of the list
-sort(+)	     Sorts the list
+Method  Description
+append(+)       Adds an element at the end of the list
+clear(+)         Removes all the elements from the list
+copy()      Returns a copy of the list
+count(+)          Returns the number of elements with the specified value
+extend(+)       Add the elements of a list (or any iterable), to the end of the current list
+index(+)        Returns the index of the first element with the specified value
+insert(+)       Adds an element at the specified position
+pop(+)     Removes the element at the specified position
+remove(+)       Removes the first item with the specified value
+reverse(+)    Reverses the order of the list
+sort(+)      Sorts the list
 
 '''
 
 
-#insert(index,value)-------
-
 
 products =['Kiko','nike','adiddas','AP']
 
-#insert()
+#yek adad vared konm
+#chang 
+#products[0]='sheglam'
+
+#change --> b tabe niaz nadashti
+
+#vared konam , jash konam --> insert konam
+
+#insert
 
 products.insert(1,'swatch')
 
+#1 --> injori az tabve estefade msihe .insert(index,value)
 
-#NameError: name 'products' is not defined
-
-
-#tavabaye str --> emal nmishod, khorojhi midad (zarf)
-#tavabeye list --> emal mishe, khoroji nemide 
+#2--> niazi b zarf ndri
 
 
 print(products)
 
-'''
-['Kiko', 'swatch', 'nike', 'adiddas', 'AP']
+#['Kiko', 'swatch', 'nike', 'adiddas', 'AP']
 
-'''
+
+
+
+
+
+
+
+#-------
+#b tahe list chizi ezafe konam --> kheyli vaghta 
+
 products =['Kiko','nike','adiddas','AP']
 
-len(products) #4
+len(products) #4 --> 0 1 2 3 
 
 products.insert(3,'swatch')
 
+print(products)
 
-print(products) #['Kiko', 'nike', 'adiddas', 'swatch', 'AP']
-
-
+#['Kiko', 'nike', 'adiddas', 'swatch', 'AP']
 
 
 products =['Kiko','nike','adiddas','AP']
-
 products.insert(4,'swatch')
-
 print(products)
-
 #['Kiko', 'nike', 'adiddas', 'AP', 'swatch']
 
 
+#len , bedonam yedone balatar az akahrin index, insert()
 
-#append(element)
+#tabe ei nist k man kh sade esm(value) -->b tahe 
+
+
 products =['Kiko','nike','adiddas','AP']
 
 products.append('swatch')
-#yek elemento 
 
 
 print(products)
+
 #['Kiko', 'nike', 'adiddas', 'AP', 'swatch']
 
 
-#yek liste dg ei ro b entehaye yek liste dg 
-#append
 
-#extend
+
+#shoma ag yek list ro bekhay b tahe in ezafe koni chtor?
 
 products =['Kiko','nike','adiddas','AP']
 new_products=['rolex' , 'D&G','zara']
 
-
-#yedone elemnt product tahesh
-#products.append(')
 
 products.append(new_products)
 
 
+print(products)
+
+#['Kiko', 'nike', 'adiddas', 'AP', ['rolex', 'D&G', 'zara']]
+products[4] # ['rolex', 'D&G', 'zara']
+
+#done done element ro b on tah ezafe konm 
+
+#-> extend
 
 
 products =['Kiko','nike','adiddas','AP']
 new_products=['rolex' , 'D&G','zara']
+
 products.extend(new_products)
 
+print(products)
+
+#['Kiko', 'nike', 'adiddas', 'AP', 'rolex', 'D&G', 'zara']
+
+
+products[4] # 'rolex'
+products[5] #'D&G'
 
 
 
-products.remove('nike')
-
-print(products) #['Kiko', 'adiddas', 'AP', 'swatch']
-
-products.remove('nnnnnnnn') #ValueError: list.remove(x): x not in list
-
+#-----remove --> remove()
 
 products =['Kiko','nike','adiddas','AP']
 
-products.pop(1)
-
-#na tanha hazf mikone, (emal)
-#oon elemente hazf shode ham bsorate khoroji mide
-#zarf briuzi
+products.remove('nike')
 
 
 print(products) #['Kiko', 'adiddas', 'AP']
 
-
-#delete , clear --> tamame python
-
-#dlkdeet --> az paye o asas hazf koni
-
-#clear --> dakhelesho remove koni
-
-products.clear()
-
-
-print(products) #[]
-a=[]
-
-
-#baraye tamame variable ha hast na fght list
-del products
-
-print(products) #NameError: name 'products' is not defined
+products.remove('asdjhaduhsaasdj')
+#ValueError: list.remove(x): x not in list
 
 
 
+#element bdm bgm hazf kon, gahi mikham index bedam bgm hazf kon
+
+
+#pop()
 products =['Kiko','nike','adiddas','AP']
 
-products.sort()
+#hem emal mishe ham kjhoroji
+
+products.pop(1) #Out[41]: 'nike'
+
+print(products) #['Kiko', 'adiddas', 'AP']
 
 
-print(products)
-#['AP', 'Kiko', 'adiddas', 'nike']
-
-#aval horofe bozorg ro omade a - z
-#horofe kochik a - z
-
-products =['Kiko','nike',10 , 100 , 200 , 'adiddas','AP']
-
-products.sort() #TypeError: '<' not supported between instances of 'int' and 'str'
-
-print(products)
+#bana bar niazam agar niaz dahstamesh tooye yek zarf brizam
 
 
+#clear and delete difference
 
+a = [10,20,30,40]
 
-products =['Kiko','nike','adiddas','AP']
-products.count('Kiko') #Out[163]: 1 , 2, 3
+a.clear()
 
+print(a) #[]
 
-
-#0---------
-products =['Kiko','nike','adiddas','AP']
-products.index('Kiko') # 0
-products.index('AP') #Out[165]: 3
+#a= []
 
 
 
+#az yek keyword estefade
 
-a=[10,20,30,40]
+#keyword --> banafsh -->
 
-b = a
+#baraye hazfe har zarfi --> az keyword del estefade
+
+#del miad khdoe zarfo ba jash hazf mikone
+
+
+del a
+print(a) #NameError: name 'a' is not defined
+
+
+del name
+del new_name
+
+
+
+
+names = ['ali','vahid','hamid','reza','ali']
+
+
+names.count('ali') #Out[50]: 2
+
+
+names.index('vahid') # 1
+names.index('sdakjdns')
+#ValueError: 'sdakjdns' is not in list
+
+
+#names.index('vahid',2,5)
+#ValueError: 'vahid' is not in list
+
+
+
+#.index() --->  error mide ag nabashe
+
+
+#.find() --> str
+
+name='ali'
+
+name.find('b') #Out[55]: -1
+#-1 --> kh jaha b manie vojod nadashtan hast
+
+
+
+
+
+
+a_list = ['ali','vahid','hamid','reza','ali']
+
+a_list.sort()
+
+print(a_list)
+
+'''
+['ali', 'ali', 'hamid', 'reza', 'vahid']
+
+
+'''
+
+
+a_list = ['ali','Amir','behta','Baran','zara']
+
+
+a_list.sort()
+
+
+print(a_list)
+
+
+#['Amir', 'Baran', 'ali', 'behta', 'zara']
+
+a_list.reverse()
+
+print(a_list)
+
+#['zara', 'behta', 'ali', 'Baran', 'Amir']
+
+
+#-------------
+
+a = [10,20,30,40]
+
+b = a 
+#yek zarf bename b beszz , a ro beriz tosh 
+
 print(a) #[10, 20, 30, 40]
 print(b) #[10, 20, 30, 40]
 
 
 
-
-
-
-a.append(50)
-print(a)  #[10, 20, 30, 40, 50]
-print(b) #[10, 20, 30, 40, 50]
-
-a=[10,20,30,40]
-
-c =  a.copy()
-
-
 a.append(50)
 
 print(a) #[10, 20, 30, 40, 50]
-print(c) #[10, 20, 30, 40]
+print(b) #[10, 20, 30, 40, 50]
+
+
+#deep copy --> yani vaghty minevsiui b = a
+#yani ta tahesh b = a , yani zarfe a ba b barabare
+#pas hartaghiri rooye a bash e, rooye b ham etefagh mioofte
+
+#backuop 
+
+a = [10,20,30,40]
+b = a.copy()  #snapshot migire
+
+print(a) #[10, 20, 30, 40]
+print(b) #[10, 20, 30, 40]
+
+
+a.append(50)
+
+print(a)  #[10, 20, 30, 40, 50]
+print(b) #[10, 20, 30, 40]
 
 
 
 
+# tavabe eei k khorji midan
+#.count() .index() --> adad emal nmitonan
+#.copy() -> khoroji mide
+#.pop() --> ham emal mikone hajm khoroji
 
-a='ali'
-
-b = a
-
-a[0]='g' #TypeError: 'str' object does not support item assignment
-
-
-
-#--------------
-#str , list 
-
-#Tuple , Set , dictionary
-#list --> indexed , changable, allow duplicated
-#tuple --> indexed , unchangable , allow duplicated
-#set --> XX INdex , unchangable , No duplicated
-#Dictionary --> index (dige ei)
+#ina emali hastan
+#.insert() .append() .extend() .sort() .reverse() .remove() .clear()
 
 
-#---------------
-
-a = [10,10,10,10]
-
-#------tuple -->
-#[]
-
-a= (10,20,30,40)
-
-a=tuple((10,20,30,40))
-
-print(type(a)) #<class 'tuple'>
+#list haro yad grftim , [] , [index] ,[start:end] ,.list_functions()
 
 
-a[0] #Out[181]: 10
 
-a[0:3] #Out[182]: (10, 20, 30)
+#--------------------------------
+#--------------------------------
+'''          ITERABLES      '''
+#--------------------------------
+#--------------------------------
 
-a[0]=100
+#list --> ordered (index), changable , allow duplicated
+#tuple --> ordered (index) , unchangable , allow duplicated
+#set --> unordered (no index) , unchangable , No duplicated
+#dictionary --> index --> Keys
 
 
-'''
-TypeError: 'tuple' object does not support item assignment
 
-'''
+#------LIST------------
+a1 = [10,20,30,40]
+a1 = list([10,20,30,40])
+a1[0] #Out[75]: 10  index dare (ordered)
 
-#tuple --> list
+a1[0]=400 #changable
+print(a1) #[400, 20, 30, 40]
 
-#lisyt --> hamishe
+a1 = [10,10,10,20,30] #allow duplicated
+print(a1) #[10, 10, 10, 20, 30]
 
-#tuple --> database (paygahe dade)
-a= (10,20,30,40)
+#hameja list estefade msihe, 90% e jaha az list estefade mikonid
 
-print(type(a)) #<class 'tuple'>
 
-b = list(a)
+
+
+#-----TUPLE --------------
+#index(ordered) , unchangable , allow duplicated
+#Listi hast k change nadare ---> Database (paygahe dade) -->
+# dataha k miano miran mire too hezaran function --> kole zarfo unchanagble esh mikonim
+
+a2 = (10,20,30,40)
+a2 = tuple((10,20,30))
+
+print(a2) #(10, 20, 30, 40)
+
+print(type(a2)) #<class 'tuple'>
+
+a2[0] #Out[80]: 10
+#ordered (index)
+
+a2[0]=400
+#TypeError: 'tuple' object does not support item assignment
+#unchanagbkle
+
+a2=(10,10,10,20)
+print(a2) #(10, 10, 10, 20)
+
+
+#pas agar man bekham yek tupel taghir bedam chtor??
+
+a2 = (10,20,30,40)
+
+a2[0]=100  #TypeError: 'tuple' object does not support item assignment
+
+b = list(a2)
 
 print(type(b)) #<class 'list'>
 
-b[0]=1000
-print(b) #[1000, 20, 30, 40]
+print(b) #[10, 20, 30, 40]
 
+b[0]=100
+print(b) #[100, 20, 30, 40]
 
-a = tuple(b)
+a2= tuple(b)
 
-'''
-https://www.w3schools.com/python/python_ref_tuple.asp
+print(type(a2)) #<class 'tuple'>
 
+print(a2) #(100, 20, 30, 40)
 
-Method	Description
-count()	Returns the number of times a specified value occurs in a tuple
-index()	Searches the tuple for a specified value and returns the position of where it was found
+a2=(10)
+print(type(a2)) #<class 'int'>
 
-
-'''
-
-
-
-a=(10)
-print(type(a)) #<class 'int'>
-
-
-a=(10,)
-print(type(a)) #<class 'tuple'>
+#tuple tak elementi
+a2 = (10,)
+print(type(a2)) #<class 'tuple'>
 
 
 
 
+#----SET----------
+#unordered (no index) , unchangable , no duplicated
 
-#------------
-#list --> indexed, changable ,allow duplicated
-#tuple -> indexed , unchangable(db) , allow duplicated
-#set --> unindexed , unchnagbale , No duplicated
+a3 = {10,20,30,40}
+a3=set({10,20,30,40})
 
+print(a3) #{40, 10, 20, 30}
 
-#{}
+a3[0] #TypeError: 'set' object is not subscriptable
 
-a={10,20,30,40}
+#ordered nistan -> indedx nadaram
 
-print(a)
-#{40, 10, 20, 30}
-
-a[0] #TypeError: 'set' object is not subscriptable
-
-#a[]
+#a3[0]=400
 
 
-#kheyli jaha tooye majmoe ha
+a3 ={10,10,10,20,30}
 
+print(a3) #{10, 20, 30}
 
-a=[10,20,20,30,40,50]
+#majmoe haye riazi 
+#ya zamani k bekahhi -->tekrari haro hazf
+
+#list ---> set --> list
+
+a=[10,10,20,30,40]
+#kara roo list kardi
 
 b = set(a)
 
-print(b)
-#{40, 10, 50, 20, 30}
+a = list(b)
+
+print(a) #[40, 10, 20, 30]
 
 '''
-Method	Shortcut	Description
-add()	 	Adds an element to the set
-clear()	 	Removes all the elements from the set
-copy()	 	Returns a copy of the set
-difference()	-	Returns a set containing the difference between two or more sets
-difference_update()	-=	Removes the items in this set that are also included in another, specified set
-discard()	 	Remove the specified item
-intersection()	&	Returns a set, that is the intersection of two other sets
-intersection_update()	&=	Removes the items in this set that are not present in other, specified set(s)
-isdisjoint()	 	Returns whether two sets have a intersection or not
-issubset()	<=	Returns True if all items of this set is present in another set
- 	<	Returns True if all items of this set is present in another, larger set
-issuperset()	>=	Returns True if all items of another set is present in this set
- 	>	Returns True if all items of another, smaller set is present in this set
-pop()	 	Removes an element from the set
-remove()	 	Removes the specified element
-symmetric_difference()	^	Returns a set with the symmetric differences of two sets
-symmetric_difference_update()	^=	Inserts the symmetric differences from this set and another
-union()	|	Return a set containing the union of sets
-update()	|=	Update the set with the union of this set and others
-
-'''
-
-
-
-'''
-
-iterable python --> Python neveshte 
-
-
-
-ketabkhone --> numpy
-
-numpy array <---> list
-object --> C++
-python --> Interface 
-
-
-import numpy as np
-a = np.array([10,20,30,40])
-a[0] #Out[198]: 10
-
-
+Method  Shortcut    Description
+add()       Adds an element to the set
+clear()     Removes all the elements from the set
+copy()      Returns a copy of the set
+difference()    -   Returns a set containing the difference between two or more sets
+difference_update() -=  Removes the items in this set that are also included in another, specified set
+discard()       Remove the specified item
+intersection()  &   Returns a set, that is the intersection of two other sets
+intersection_update()   &=  Removes the items in this set that are not present in other, specified set(s)
+isdisjoint()        Returns whether two sets have a intersection or not
+issubset()  <=  Returns True if all items of this set is present in another set
+    <   Returns True if all items of this set is present in another, larger set
+issuperset()    >=  Returns True if all items of another set is present in this set
+    >   Returns True if all items of another, smaller set is present in this set
+pop()       Removes an element from the set
+remove()        Removes the specified element
+symmetric_difference()  ^   Returns a set with the symmetric differences of two sets
+symmetric_difference_update()   ^=  Inserts the symmetric differences from this set and another
+union() |   Return a set containing the union of sets
+update()    |=  Update the set with the union of this set and others
 
 '''
 
 
-
-#------------
-#list --> sequence 
-#tuple --> db
-#set --> majmoe riaziat
-
-
-
-a=['ali',49, '04402332231332', '09120000000' ,190 ,'tehran' ]
-
-
-
-a[0] #Out[199]: 'ali'
-
-a[1] #Out[199]: 'ali'
-
-
-#bejaye index --> 
-
-#a[3]
-
-#a['phone']
-#a['name']
-
-#dictionary
-
-
+#---------Dictionary-----------
 
 '''
-list , tuple (unchangable)
+list ,  tuple
 
-index   value
+index    value
 0       elm0
 1       elm1
 2       elm2
 3       elm3
 4       elm4
 5       elm5
+
+
 
 
 dict (dictionary)
@@ -1463,130 +1583,269 @@ key4    value4
 
 
 
-
-
-
-set
-value
+set 
+valu 
 elm0
 elm1
 elm2
+elm3
+elm4
 
 
 
 
 
-
+infromation (etelaat) hast
 '''
 
-#bazi az datah kilidvazhe eie , information (etelaat)
 
 a=['ali',49, '04402332231332', '09120000000' ,190 ,'tehran' ]
 
 
+#b phone
+#phoen trf idnexe 3 vome
 
-#{}
+a[3] # '09120000000'
 
-'''
-zarf = {  key1 : value1  , key2 :value2 , ....    }
-
-
-'''
-
-a_list=['ali',49, '04402332231332', '09120000000' ,190 ,'tehran' ]
-
-a_tuple=('ali',49, '04402332231332', '09120000000' ,190 ,'tehran' )
-
-a_set={'ali',49, '04402332231332', '09120000000' ,190 ,'tehran' }
+a[4] #190
 
 
+#a['ghad']
+#a['phone']
 
-#a_dict={'name' : 'ali' , 'sen':49 , 'meli':'04402332231332' }
-
-a_dict={'name' : 'ali' ,
-        'sen':49 ,
-        'meli':'04402332231332',
-        'phone':'09192111221',
-        'city':'tehran'}
+#list?
+print(type(a)) #<class 'list'>
 
 
-a_list[0] #Out[203]: 'ali'
-
-a_dict['name'] #Out[204]: 'ali'
-
-a_dict['sen'] #Out[205]: 49
+#a_dict = { key1 : value1   , key2 : value2 , key3 : value3  }
 
 
-
-a_dict['new_key']  = 'new_value'
-
-a_dict['country'] = 'iran'
-
-
-a_dict.keys()
-'''
-dict_keys(['name', 'sen', 'meli', 'phone', 'city', 'country'])
-
+a=['ali',49, '04402332231332', '09120000000' ,190 ,'tehran' ]
+print(type(a)) #<class 'list'>
 '''
 
-a_dict.values()
-'''
-dict_values(['ali', 49, '04402332231332', '09192111221', 'tehran', 'iran'])
+index    value
+0        ali
+1        49
+2
+3
+4
+4
 
-'''
-
-
-'''
-Method	Description
-clear()	Removes all the elements from the dictionary
-copy()	Returns a copy of the dictionary
-fromkeys()	Returns a dictionary with the specified keys and value
-get()	Returns the value of the specified key
-items()	Returns a list containing a tuple for each key value pair
-keys()	Returns a list containing the dictionary's keys
-pop()	Removes the element with the specified key
-popitem()	Removes the last inserted key-value pair
-setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
-update()	Updates the dictionary with the specified key-value pairs
-values()	Returns a list of all the values in the dictionary
 
 
 '''
 
-a_dict={'name' : 0 ,
-        'sen':1 ,
-        'meli':2,
-        'phone':3,
-        'city':4}
+a[0] #'ali'
+a[5] #'tehran'
 
 
-a_dict['name'] #0
+a[1]=50
 
-a_list[a_dict['name']]
-
-
-#internal indexing 
+print(a)
+'''
+['ali', 50, '04402332231332', '09120000000', 190, 'tehran']
 
 '''
-Method	Description
-clear()	Removes all the elements from the dictionary
-copy()	Returns a copy of the dictionary
-fromkeys()	Returns a dictionary with the specified keys and value
-get()	Returns the value of the specified key
-items()	Returns a list containing a tuple for each key value pair
-keys()	Returns a list containing the dictionary's keys
-pop()	Removes the element with the specified key
-popitem()	Removes the last inserted key-value pair
-setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
-update()	Updates the dictionary with the specified key-value pairs
-values()	Returns a list of all the values in the dictionary
+
+
+
+
+
+b= {'name' : 'ali'  , 'sen' : 49 ,
+    'meli' :'04402332231332',
+    'phone': '09120000000',
+    'ghad':180 ,
+    'city':'tehran'}
+
+print(type(b)) #<class 'dict'>
+
+
 
 '''
+
+key   value
+name   ali
+sen    49
+meli   ...
+ghad   ..
+phoen ....
+
+'''
+b['name'] # 'ali'
+
+b['city'] #'tehran'
+
+
+
+b['sen']=50
+print(b)
+
+'''
+{'name': 'ali', 'sen': 50, 'meli': '04402332231332', 'phone': '09120000000', 'ghad': 180, 'city': 'tehran'}
+
+'''
+
+
+#kilidvazhe ye jadid ezafre koni
+
+b['team'] = 'esteghlal'
+
+
+print(b)
+
+'''
+{'name': 'ali', 'sen': 50,
+ 'meli': '04402332231332',
+ 'phone': '09120000000',
+ 'ghad': 180, 'city': 'tehran', 
+ 'team': 'esteghlal'}
+
+
+'''
+
+
+b.keys()
+
+'''
+Out[120]: dict_keys(['name', 'sen', 'meli', 'phone', 'ghad', 'city', 'team'])
+
+'''
+
+c = b.keys()
+print(c)
+
+print(type(c)) #<class 'dict_keys'>
+
+
+d = list(c)
+print(d)
+#['name', 'sen', 'meli', 'phone', 'ghad', 'city', 'team']
+
+
+
+
+
+b.values()
+
+'''
+dict_values(['ali', 50, '04402332231332', '09120000000', 180, 'tehran', 'esteghlal'])
+
+'''
+
+#dictioanry
+
+
+d = list(b.values())
+print(d)
+#['ali', 50, '04402332231332', '09120000000', 180, 'tehran', 'esteghlal']
+
+
+'''
+Method  Description
+clear() Removes all the elements from the dictionary
+copy()  Returns a copy of the dictionary
+fromkeys()  Returns a dictionary with the specified keys and value
+get()   Returns the value of the specified key
+items() Returns a list containing a tuple for each key value pair
+keys()  Returns a list containing the dictionary's keys
+pop()   Removes the element with the specified key
+popitem()   Removes the last inserted key-value pair
+setdefault()    Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()    Updates the dictionary with the specified key-value pairs
+values()    Returns a list of all the values in the dictionary
+
+
+'''
+
+
+
+'''
+Python
+
+
+Human ( en) <-----Interface ----> Machine (bianry 0,1)
+
+
+Python --> vocab, grammar
+
+
+1- Python built in functions --> tavabe hastand baraye hame , yek amalkardi
+narenji
+
+print() , inpiut() , len() , type() ,....
+
+
+
+2- Keywords -> logic manteghe barname ro avaz koni --> banafash
+
+del , if , else , elif , for , while , def , and , or ,...
+
+
+
+3- Variables --> sefid --> esme zarf
+
+3.1. Numbers (int, float, complex) --> ** * / + - , == != > >= < <=
+3.2. Bool (True,False)
+3.3. Str --> '' , [index] [start:end:step] str.fucntions() --> emal nemishdo, khoroji midad
+        zarf_jadid = zarf.str_fucntion()
+        3.3.1. Taghirat --> .upper() .lower() .title() .replace() .strip() 
+        3.3.2. Adad --> .count('a') .find('a')
+        3.3.3. True false --> is --> .isdigit()
+        
+        
+3.4. Iterables --> chanta Value ra dakhele yek zarf berizim
+
+3.4.1. List (ordered(index),chanagble,allow duplicated)
+        a=[10,20,30,10.3434, 1j , True , 'ali']
+        a[index] , a[2:5]
+        change --> a[index]=new_value
+        list functions --> emal mishodan , khoroji nmikhas
+        zarf.insert(4,new_value)
+        zarf.append(value) ,zarf.extend(list)
+        zarf.clear()   zarf.remove()
+        zarf.pop() , .count() .index()
+        
+        aksare jaha shoma az list ha estefade mikonid
+        
+3.4.2. Tuple (ordered (index), unchanagbel , allow duplciated)
+        yek listi hast k unchanagbel (DB)
+        a= (10,20,30,40,50,60)
+        a[index]
+        a[index] =2323 --> error -> unchanagbel  b = list(a)  taghir a=tuple(b)
+        tavabeye khodesho dahst
+     
+3.4.3. Set (unordered (no index) , unchanagble , no duplicated)
+        majmoe riazi, gheyre terari
+        a= {10,20,30,40}
+        a[index ] NO --> indexi nadarad, chon index nadarad, taghiri nmitonad konad
+        
+        
+        
+3.4.4. Dictionary --> bejaye index value , key value
+        a=['ali',40 , 180 ,...]
+        a[0]
+        
+        
+        a={'name':'ali' , 'sen' :40 ,....}
+        
+        a['name']
+    
+        a.keys()
+        a.values()
+        
+        zamani k shoam information (etelaat darid)
+        
+        
+
+
+'''
+
+
 
 
 '''
 Tamrin1 ------ jalase ghabl
-
 
 ta panjshanbe ersal konand mamnoon
 
@@ -1615,12 +1874,10 @@ list_functions.py
 
 
 
-
-
 3,4(optional) tuple,set
 
 
-4-->dictionary --> dict.py 
+5-->dictionary --> dict.py 
 
 dictionary az information khodet mizare
 
@@ -1631,37 +1888,7 @@ dictionary az information khodet mizare
 az tavabe dict functions azash estefade bokoni
 
 
-
-
-
-1- Python buklt in functions (mohem tarinash)
-2- Keywords
-3- Variables (int,float, complex, str, list,tuple,set ,dictionary)
-
-
-
-jalaseye ayande -->morori roo hame mbahes 
-
-Keywords (If, else ,elif)
-
-inja bema ejaze mdiei avalipsudocode -->
-
-shebhe code --> va ejaze mdie k ma avalin shebhe barname ro benvisam
-
-bejaye yadgirie entezaei , amaliati yadesh begirim
-
-
-
-
-
-
-
-
 '''
-
-
-
-
 
 
 

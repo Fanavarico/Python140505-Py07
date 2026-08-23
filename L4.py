@@ -1861,19 +1861,6 @@ a_list.append(amir) --> [ali,amir]
 '''
     
 
-
-
-
-
-#-------------------
-'''
-12 ta taklif 
-
-
-
-
-'''
-
 my_users = ['ali','vahid','reza','amir','hamid']
 
 a_list=[]
@@ -1886,16 +1873,7 @@ for esm in my_users:
         
     
         
-    
-    
-    
-    
-    
-    
-        
 print(a_list) #['ali', 'amir']
-
-
 
 
 #acction--.> 1 namayesh --> print
@@ -1939,9 +1917,6 @@ count = count + 1 = 1 + 1 =2
 '''
 
 print(count) #2
-
-
-
 
 '''
 dar in jalase L4
@@ -2012,5 +1987,135 @@ charshangwe --> git cli --> bishtr git
 
 
 '''
+
+
+
+
+
+#-------------------
+#-------------------
+#-------------------
+#===================
+#===================
+#===================
+#-------------------
+#-------------------
+#-------------------
+
+
+'''
+12 ta taklif 
+
+=======================Conditional Statement=======================
+
+Q1----- Login 
+
+az User , usernamesh ro begirid va passwordesh ro ham begirid , agar
+username barabar bashe ba admin va password bashe 1234 nenevesidi Login ba moafaghiat
+anajm shod, agar na , benevisid password ya username ghalat hast.
+
+
+
+
+Q2----- Takhfif
+az user gheymate kala ro begirid , age gheymate kala bishtar az 1 milion toman bashad
+20% takhfif, agar gheymate kala beyne 500,000 ta 1 million toman bashe , 15 darsad takhfif 
+agar gheymate kala zire 500 hezar toman bashad, 10% takhfif emal konid va dar nahayat
+gheymate bad az takhfif ro b user neshan dahid
+
+
+
+Q3---- check mouse
+ma yek list darim az mahsoolat , va injori hast : 
+products = ["Laptop", "Mouse", "Keyboard", "Monitor"]
+
+yek vorodi az karbar begirid va az karbar bekahhdi esme yek mahsol ro bege
+agar oon mahsol dakhele in list bashe begid mahsool dar dastress hast , 
+agar nabood benevisid dar dastress nist.
+
+
+Q4----Spped check
+
+az karbar yek sorate mashin begirid
+
+agar bish az 120 bashe benevsiid khatarnak , agar beyne 80 ta 120 bashe 
+beneisid sorate ziad, agar beyne 80 ta 0 bashe benevsidi sorate noraml
+agar zire 0 bashe benevsidi mashin dar halate istade hast.
+
+
+
+
+=======================Loop Quiz=======================
+
+Q5----Adade fard
+
+In mesal az se bakhsh a,b,c tashkil shode
+Adade farde beyne 15 ta 115 ro  a)chap konid b)dakhele yek list berizid c)beshmorid
+
+
+Q6----Mohasebe majmooei gheymat ha
+Yek listi az esm ha darim ,ba estefade az halgheye for , majmooe toole tamame
+esm haro hesab konid.
+
+names = ["Ali", "Sara", "Reza", "Mina"]
+
+
+Q7----Mohasebe Moraba
+
+Yek listi az adad darim , yek liste jadid besazid az morabae har adad
+
+Moraba yani x**2
+
+numbers = [1, 7, 15, 23, 31,44]
+
+Q8---- Esm haye kootah
+
+Yek listi az user ha darim, berid va tedade afradi ke dar in list 
+
+andazeye esmeshon kamtar az 5 hast ro beshmorid.
+
+
+users=['ali','vahid','mohammadreza','hamidreza','gholamreza','amir','sara','maryam']
+
+Q9----Afzayeshe gheymat
+yek listi darim az gheymate mahsol haye yek foroshgah , yek liste jadid besazid
+ke tamame gheymate mahsoolat ro 10% afzayesh dahad.
+
+
+Q10----Tbadil celsius be fahrenheit
+
+Ma yek dade darim az sensore yek karkhane ke dama ro be Celsius neveshte ast.
+
+yek liste jadid besazid va in list bayaad adade farenheite ghabli ha bashad
+
+formule tabdil : Farenheit = Celsius * 1.8 + 32
+
+
+
+Q11----Mohasebe Soode foroshe mahsool
+ma yek listi darim az gheymate kharide mahsoolat , va yek listi darim az ghyemate foroshe mahsoolat
+shoma bayad soode har kodom az mahsoollat ro dar yek liste jodagane hesab konid
+
+
+buy_prices = [100, 200, 150, 400]
+sell_prices = [130, 250, 190, 500]
+
+
+
+Q12---- Gereftane mahsool
+
+ba estefade az halgheye for , yek systemi benevisid , ke 5 bar az karbar esme yek
+mahsool begire (masalan zara, nike ,..) va agar toole oon mahsool kamtar az 6 bashad
+dakhele yek listi bename sabade_kharid berizad.
+
+
+
+'''
+
+
+
+
+
+
 
 

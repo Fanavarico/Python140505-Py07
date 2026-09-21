@@ -1387,6 +1387,166 @@ pish niazesh -->
 
 
 
+'''
+Tamrin ----->
+
+
+4 ta soal darim --> 3 ta soal mortabet be tavabe hast
+1 soal mortabet be packages
+
+
+
+
+
+1- yek dictionary aZ mahsoolat darim 
+
+products = {
+'laptab': 1200,
+'phone': 800,
+'tablet': 500,
+'headphone': 150,
+'mouse': 50
+}
+
+
+Chandin tabe benevisid ke in dictionary ro besoorate vorodi begire
+va
+
+
+- bishtarin gheymat ro pas bede
+- esme mahsoli ke bishtarin gheymat ro dare pas bede
+- hamin 2 taro baraye **kamtarin** ham anjam dahid
+- jame kole mahsoolat ro pas bede
+- miangine kole mahsolat ro pas bede
+
+
+
+2- yek dictionary az mahsolato mojodi ro darid , in ro be soorate vorodi yek atbe migire
+va do khoroji mide, do ta list mide ke yeki list esme mahsolati hast ke
+mojodi darand , yeki list mahsolati ke mojodi nadaand
+
+inventory = {
+    "apple": 20,
+    "banana": 5,
+    "orange": 0,
+    "milk": 12,
+    "bread": 0
+}
+
+
+
+3- Yek tabe benvisid ke yek listi az karmandan ba etelaatesho migire
+
+
+employees = {
+    "E01": {
+        "name": "Ali",
+        "age": 28,
+        "salary": 3000
+    },
+
+    "E02": {
+        "name": "Sara",
+        "age": 32,
+        "salary": 4500
+    },
+
+    "E03": {
+        "name": "Reza",
+        "age": 25,
+        "salary": 2800
+    }
+}
+
+
+- balatarin hoghogh ro harki migire esmesho pas bedde
+- kamtarin hogh ro harki migire esmesho pas bede
+- yek listi az esme afradi k hoghoghe bish az 3000 migiran pas bede
+- do vorodi begire tabe, yeki in dictionary (employees) yeki ye adad ke bedre liste esme afradi ke hoghoghe bishtar az oon adad ro migiran ro pas bede
+- miangine kole hoghogh haro pas bede
+
+
+
+
+3- yek tabe benevisid ke yek listi az tuple ha dare o ino be onvane vorodi migirie
+
+sales = (
+    ("Ali", "Laptop", 1200),
+    ("Sara", "Phone", 800),
+    ("Ali", "Phone", 800),
+    ("Reza", "Laptop", 1200),
+    ("Sara", "Laptop", 1200),
+    ("Ali", "Mouse", 50)
+)
+
+
+- yek tabe benvisid  ke khoroji yek dictionary bede ke har fard yek key hast va jolosh jame kharidesho zade
+- yek tabe benevisid ke khorojish yek dictionary bede ke key ha esme mahsolat bashe va jolosh tedde foroshe mahsolat
+- yek tabe benevsiid ke khoroji ye adad bede ke majhmooe daramade foroshgah hast
+
+
+
+
+
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+
+
+4 - Yek folder besazid bename bank_package ke 
+
+shoma bayad yek folder va dfile haei injori besazid:
+
+
+bank_project/
+│
+└── bank/
+    │
+    ├── account.py
+    ├── fees.py
+    │
+    └── app/
+        ├── main.py
+        └── calculator.py
+
+
+shoma dakhele account.py yek tabe benevisid bename show_balance(balance) ke yek vorodi migire va khoroji 
+*100 mikone o pas mide
+
+
+dar calculator.py yek tabe benevisid bename deposit(balance,amount) ke biad balance ro be alaveye amoutn kone va pas bede
+
+
+dar file fees.py yek tabe bename apply_fee(balance,fee) ke az balance fee ro kam kone va pas bede
+
+
+dar tabeye main.py shoma bayad yek script benevsiid ke hamchin chizi
+
+```python
+balance = 1000
+
+print(show_balance(balance))
+
+balance = deposit(balance, 500)
+print(show_balance(balance))
+
+balance = apply_fee(balance, 50)
+print(show_balance(balance))
+
+```
+
+
+kole taklife shoma do chiz hast , 1- inke tabe haro takmil konid
+2- dar main.py import haro benevisid.
+
+
+
+
+
+
+'''
 
 
 

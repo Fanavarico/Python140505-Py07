@@ -1,0 +1,1 @@
+def l2_function():    passdef l22_function():    passdef l222_function():    passdef l2222_function():    passif __name__ =='__main__':        print('salam')        

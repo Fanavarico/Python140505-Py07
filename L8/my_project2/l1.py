@@ -1,0 +1,1 @@
+from l2 import l2_functiondef l1_function():    #l2_function    pass#__name__#python felan.py #__name__ = main#import mishan#__name__ = felan (esme felan)

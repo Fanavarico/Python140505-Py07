@@ -1470,14 +1470,14 @@ employees = {
 
 3- yek tabe benevisid ke yek listi az tuple ha dare o ino be onvane vorodi migirie
 
-sales = (
+sales = [
     ("Ali", "Laptop", 1200),
     ("Sara", "Phone", 800),
     ("Ali", "Phone", 800),
     ("Reza", "Laptop", 1200),
     ("Sara", "Laptop", 1200),
     ("Ali", "Mouse", 50)
-)
+]
 
 
 - yek tabe benvisid  ke khoroji yek dictionary bede ke har fard yek key hast va jolosh jame kharidesho zade

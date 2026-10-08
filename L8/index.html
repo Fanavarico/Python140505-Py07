@@ -115,7 +115,7 @@
     <p>Enter your username and password to continue.</p>
     <form action="#" method="post" autocomplete="on">
       <label>
-        Username
+       words. : response['words']
         <input type="text" name="username" autocomplete="username" required>
       </label>
       <label>
@@ -125,5 +125,31 @@
       <button type="submit">Sign in</button>
     </form>
   </main>
+
+
+  <javascrpt>
+    listen button(submit) --> handle_submit()
+
+    def handle_submit():
+      username = username.value
+      password = password.values 
+
+      request_data = {'username':username,  'password':password}
+
+      response = request --> https://getplutus.com/login --> request_data
+
+      if response==True:
+            go to getplutus.com/dashboard 
+      else:
+          console.log('Password va user eshtebah ast')
+
+
+
+      response = request('getplutus.com/analyze_text' ,data = text)
+
+
+
+
+  </javascrpt>
 </body>
 </html>

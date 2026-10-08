@@ -1316,6 +1316,214 @@ def sqrt(adad):
 
 
 
+
+'''
+
+------------- Takalif ------------------
+
+baraye taklif haye jalase L8 , shoma bayad yek fodlere koli besazid bename L8_Tasks va dakhelesh task haye zir ro anjam dahid
+
+
+
+1- Soale aval : dakhele L8_Tasks , yek project besazid bename project1 ke dota file bashe
+
+project1/ 
+├── main.py
+└── calculator.py
+
+dar file calculator.py , 4 tabe ye khali (mohem nist mitonid PASS bezarid toosh) dar calculator.py 
+begzarid va dar file main.py har 4 taro import konid. va file main.py ro ejra konid agar error nagereftid 
+yani masale hal shode
+
+
+
+2- Soale dovom : shoma project 2 ro be in gone besazid, yani fodlere project2 va dakheelsh
+main.py va user.py va hamchenin yek folder bename bank va ...
+
+
+project2/
+├── main.py
+├── user.py
+│
+└── bank/
+    ├── __init__.py
+    ├── account.py
+    ├── loan.py
+    └── card.py
+
+
+
+dar file haye zir in tavabe ye khali ro bezarid
+
+
+in user.py :
+def create_user():
+    pass
+
+
+
+
+in bank/account.py :
+def create_account():
+    pass
+
+def close_account():
+    pass
+
+
+
+in bank/loan.py:
+def request_loan():
+    pass
+
+
+
+
+in bank/card.py:
+def create_card():
+    pass
+
+
+
+dar main.py bayad in mavared ro import konid
+create_user
+create_account
+request_loan
+create_card
+
+
+
+
+
+3- soale sevom : yek folder besazid bename project3 ke file haye zir va do foldere accounts va payements dakhelesh bashe
+
+
+
+project3/
+├── main.py
+├── config.py
+│
+├── accounts/
+│   ├── __init__.py
+│   ├── account.py
+│   └── authentication.py
+│
+└── payments/
+    ├── __init__.py
+    ├── payment.py
+    └── fee.py
+
+
+
+tavabeye khalie zir ro tarif konid dar har kodam
+
+
+
+
+in config.py:
+def get_bank_name():
+    pass
+
+
+in accounts/account.py : 
+def create_account():
+    pass
+
+
+
+in accounts/authentication.py:
+def login():
+    pass
+
+
+
+in payments/fee.py:
+
+def calculate_fee():
+    pass
+
+
+
+in payments/payment.py:
+def make_payment():
+    pass
+
+
+
+
+khob shoma bayad dar file e main in tavabe ro import konid :
+get_bank_name
+create_account
+login
+make_payment
+calculate_fee
+
+
+
+
+
+hamchenin na tanha dar main , balke dar file haye diagr bayad yek digar ro import konid be in goone:
+
+bayad dakhele config.py , tabeye login ro az authentication.py import konid.
+
+bayad dakhele accounts/authentication.py , tabeye create_account ro az account.py import konid
+
+dakhele payments/payment.py tabeye calculate_fee ro az file fee.py improt konid
+
+hamchenin dakhele payments/payment.py bayad login ro az package accounts import konid
+
+
+
+
+
+
+
+Soal haye Optional (ekhtiari) :
+
+Optional 1 : Tabe ei besazid bename even_numbers ke vorodi yek adad bename n daryaft kone
+va ba estefade iz dastoore yield , adade zoj ro az 2 ta n yeki yeki tolid kone
+
+sepas yek geenrator besazido dakhele yek moteghayer gahrar dahid va ba next() 3 meghdare aval ro namayesh dahid
+
+
+
+
+Optional 2 : tabe ei bename available_products benevisid ke dictionary mahsoolat ro daryaft konad , yani
+vorodish yek dictioanry bashe mesle :
+
+products = {
+    "laptop": 3,
+    "phone": 0,
+    "tablet": 5,
+    "mouse": 0,
+    "keyboard": 2
+}
+
+va sepas , faghat name mahsolati ke mojodi anha bsih az sseft hast ro ba estefade az yield yeki yeki tolid konad (yani ye khoroji)
+
+sepas yek geenrator besazido mahsolate mojod ro ba next() done done daryaft koni
+
+
+
+
+optional3 : yek tabe be name create_profile benevisid ke do vorodie ejbari begire bename name,age 
+alave bar in , betavanim har che tedade etelate ezafi ro ba estefade az **kwargs begire.
+
+masalan : city, job, emnail , harchiii
+
+khob tabe bayad inkaro kone :
+- namo sen ro jnamayesh bede
+- tamame etelaate ezafi ro namayesh dahad
+- tedade etelaate ezafi ro chap kone
+- agar city vojod dasht ,s hahro ro jodagone neshon bede
+- agar email vojod nadasht ebenvise : email not provided
+dar enteha ham tamame etelaate karbar ro dakhele yek dictionary jadid bezare o return kone
+
+
+
+'''
+
+
 #--------------------------
 #------advanced python -m 
 

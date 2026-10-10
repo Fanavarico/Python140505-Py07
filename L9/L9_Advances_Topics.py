@@ -29,6 +29,7 @@ ma 4 ta module darim
 		argparse --> daryaft o etebar sanjie vorodii haye khate farman
 
 
+sudo systemctl restart web_app.service
 
 '''
 

@@ -1367,18 +1367,22 @@ len(product1)
 
 
 '''
-4 ta .py --> L9_L10/
+5 ta .py --> L9_L10/
 
 
 Task1 --> jalase L9 --> kar ba try except  , file management
 
-Task2 --> jalase L9 --> OS , math 
+TASK2 --> FILE management  --> chandidn tabe baraye yek file esmo msohakajhsat .txt darim, read kone, add user
+delet euser va .. bashe
+
+
+Task3 --> jalase L9 --> OS , math 
 
 
 L10
-Task 3 --> yek class az products 
+Task 4 --> yek class az products 
 
-Task 4 --> yek class az ... (jazab)
+Task 5 --> yek class az ... (jazab)
 
 
 

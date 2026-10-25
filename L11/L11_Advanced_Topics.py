@@ -12,7 +12,6 @@ Chanta ghesmat monde az class ha ke be onvane pishrafte shenakhte mishe
 
 
 
-
 #====================================
 #====================================
 '''        Class Attribute        '''    

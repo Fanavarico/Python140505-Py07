@@ -533,7 +533,7 @@ usero misazi, dasdtresie databseo midi b user miay biron
 mysql -u root -p
 CREATE DATABASE IF NOT EXISTS esme_db ;
 CREATE USER 'esme_user'@'localhost' IDENTIFIED BY 'strongppassword' ;
-GRANT ALL PREVILEGES esme_db.* TO 'esme_user'@'localhost';
+GRANT ALL PRIVILEGES esme_db.* TO 'esme_user'@'localhost';
 exit;
 
 
@@ -1210,7 +1210,7 @@ terminal / poweshell
 mysql -u root -p
 CREATE USER 'user_manager'@'localhost' IDENTIFIEND BY 'stongpassword' ;
 CREATE DATABASE IF NOT EXISTS users;
-GRANT ALL PREVILEGES  users.* TO 'user_manager'@'localhost';
+GRANT ALL PRIVILEGES  users.* TO 'user_manager'@'localhost';
 
 
 
